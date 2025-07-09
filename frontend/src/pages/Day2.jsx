@@ -1,6 +1,7 @@
 import Counter from "../components/Day2/Counter";
 import UserCard from "../components/Day2/UserCard";
 import Name from "../components/Day2/Name";
+import BackButton from "../common/BackButon";
 
 const Day2 = () => {
   return (
@@ -10,6 +11,8 @@ const Day2 = () => {
       <Counter />
       <br />
       <Name />
+      <br />
+      <BackButton />
     </>
   );
 };

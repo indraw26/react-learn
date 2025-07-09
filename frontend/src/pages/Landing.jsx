@@ -2,7 +2,10 @@ const LandingPage = () => {
   const procom = [
     { day: 2, href: "day-2" },
     { day: 3, href: "day-3" },
-    { day: 4, href: "day-4" },
+    { day: 5, href: "day-5" },
+    { day: 6, href: "day-6" },
+    { day: 7, href: "day-7" },
+    { day: "Tambah Customer", href: "customerData" },
   ];
 
   return (
