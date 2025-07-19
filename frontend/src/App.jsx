@@ -4,8 +4,9 @@ import Day2 from "./pages/Day2";
 import Day3 from "./pages/Day3";
 import Day5 from "./pages/Day5";
 import Day6 from "./pages/Day6";
-import Day7 from "./pages/Day7";
 import CustomerData from "./pages/CustomerData";
+import BookList from "./pages/Day7/BookList";
+import BookDetail from "./pages/Day7/BookDetail";
 
 function App() {
   const routes = [
@@ -13,7 +14,7 @@ function App() {
     { path: "day-3", element: <Day3 /> },
     { path: "day-5", element: <Day5 /> },
     { path: "day-6", element: <Day6 /> },
-    { path: "day-7", element: <Day7 /> },
+    { path: "day-7", element: <BookList /> },
     { path: "customerData", element: <CustomerData/> },
   ];
   return (
@@ -24,6 +25,8 @@ function App() {
           {routes.map((route, index) => (
             <Route path={route.path} element={route.element} key={index} />
           ))}
+          <Route path="day-7/book" element= {<BookList/>}/>
+          <Route path="day-7/book/:id" element= {<BookDetail/>}/>
         </Routes>
       </Router>
     </>

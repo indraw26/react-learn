@@ -388,16 +388,20 @@ export interface ApiBookBook extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    isFinished: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::book.book'> &
       Schema.Attribute.Private;
-    published_year: Schema.Attribute.Date;
+    pageCount: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
-    synopsis: Schema.Attribute.Text;
+    publisher: Schema.Attribute.String;
+    readPage: Schema.Attribute.Integer;
+    summary: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    year: Schema.Attribute.Integer;
   };
 }
 

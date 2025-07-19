@@ -14,14 +14,27 @@
     "title": {
       "type": "string"
     },
-    "published_year": {
-      "type": "date"
-    },
     "author": {
       "type": "string"
     },
-    "synopsis": {
-      "type": "text"
+    "publisher": {
+      "type": "string"
+    },
+    "pageCount": {
+      "type": "integer"
+    },
+    "readPage": {
+      "type": "integer"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "isFinished": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
